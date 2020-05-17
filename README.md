@@ -1,6 +1,6 @@
 # Notion Date Icon
 
-A simple web application that returns a minimal icon for the current date with preset periods day, week, month, quarter, year.
+A simple web application that returns a minimal icon including the current date with preset periods. I use this to integrate dynamic icons into my (Notion.so)[https://notion.so] workspace.
 
 ## Parameters
 
