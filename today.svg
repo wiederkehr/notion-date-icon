@@ -5,23 +5,6 @@
   aria-label="Calendar"
   role="img"
   viewBox="0 0 512 512">
-  <script type="text/javascript">
-    window.addEventListener('load',function(){
-      var date = new Date();
-      var locale = "en-us";
-      
-      var DD   = date.getDate();
-      var DDD  = date.toLocaleString(locale, {weekday: "long" });
-      var MMM  = date.toLocaleString(locale, {month:   "short"}).toUpperCase();
-      var YYYY = date.getFullYear();
-      var MM   = date.getMonth() + 1;
-      
-      document.getElementById("weekday").textContent= DDD;
-      document.getElementById("month").textContent= MMM;
-      document.getElementById("day").textContent= DD;
-  
-    },false);
-  </script>
   <path
     d="M512 455c0 32-25 57-57 57H57c-32 0-57-25-57-57V128c0-31 25-57 57-57h398c32 0 57 26 57 57z" fill="#e0e7ec" />
   <path
@@ -51,4 +34,20 @@
     font-family="monospace"
     font-size="64px"
     style="text-anchor: middle">DDD</text>
+  
+  <script type="text/javascript"><![CDATA[
+    var date = new Date();
+    var locale = "en-us";
+    
+    var DD   = date.getDate();
+    var DDD  = date.toLocaleString(locale, {weekday: "long" });
+    var MMM  = date.toLocaleString(locale, {month:   "short"}).toUpperCase();
+    var YYYY = date.getFullYear();
+    var MM   = date.getMonth() + 1;
+    
+    document.getElementById("weekday").textContent= DDD;
+    document.getElementById("month").textContent= MMM;
+    document.getElementById("day").textContent= DD;
+  ]]></script>
+  
 </svg>
