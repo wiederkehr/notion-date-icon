@@ -37,6 +37,7 @@ header("Content-type: image/svg+xml");
     text-anchor="middle"
   >
     <?php 
+    date_default_timezone_set('America/New_York');
     $period = htmlspecialchars($_GET["period"]);
     $value = "?";
     switch ($period) {
